@@ -423,8 +423,9 @@ button:hover, .agendar-btn:hover, .agendar-link:hover {
     width: 50%;
     display: flex;
     justify-content: flex-end;
-    align-items: flex-start;
-    margin-top: 10px;
+    align-items: center;
+    margin-top: 0;
+    padding-top: 10px;
 }
 
 .hero-video {
@@ -441,8 +442,9 @@ button:hover, .agendar-btn:hover, .agendar-link:hover {
     width: 50%;
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
-    margin-top: 1rem;
+    align-items: center;
+    margin-top: 0;
+    padding-top: 10px;
 }
 
 @media (max-width: 760px) {
