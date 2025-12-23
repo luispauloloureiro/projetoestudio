@@ -130,32 +130,13 @@ function fecharGaleriaModal() {
 // Botão de som do vídeo principal (hero)
 function configurarMudoVideoHero() {
     const elementoVideo = document.getElementById('hero-video');
-    if (!elementoVideo) {
-        // Se não houver vídeo, tenta configurar o botão com base na imagem placeholder
-        const botaoMudo = document.getElementById('hero-mute-toggle');
-        if (botaoMudo) {
-            botaoMudo.style.display = 'none'; // Esconde o botão se não houver vídeo
-        }
-        return;
-    }
-    
-    elementoVideo.muted = true;
-    elementoVideo.volume = 1;
-    
     const botaoMudo = document.getElementById('hero-mute-toggle');
-    const atualizarRotuloMudo = () => {
-        if (!botaoMudo) return;
-        botaoMudo.textContent = elementoVideo.muted ? '🔇' : '🔊';
-        botaoMudo.setAttribute('aria-pressed', (!elementoVideo.muted).toString());
-    };
     
-    if (botaoMudo) {
-        botaoMudo.addEventListener('click', () => {
-            elementoVideo.muted = !elementoVideo.muted;
-            atualizarRotuloMudo();
-        });
-        atualizarRotuloMudo();
+    if (!elementoVideo && botaoMudo) {
+        // Se não houver vídeo local (como com iframe do YouTube), esconde o botão de mudo
+        botaoMudo.style.display = 'none';
     }
+    // Para vídeos do YouTube, o controle de mudo é feito automaticamente via parâmetros da URL
 }
 
 // Função para configurar a reprodução do vídeo

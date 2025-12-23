@@ -426,6 +426,13 @@ button:hover, .agendar-btn:hover, .agendar-link:hover {
     align-items: center;
 }
 
+.hero-youtube-video {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9;
+}
+
 .hero-text-column {
     width: 50%;
     display: flex;
@@ -434,6 +441,12 @@ button:hover, .agendar-btn:hover, .agendar-link:hover {
 }
 
 @media (max-width: 760px) {
+        .hero-video-column {
+            width: 100%;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+        
         .sobre-content {
             display: grid;
             grid-template-columns: 1fr;
