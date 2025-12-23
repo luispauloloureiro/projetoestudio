@@ -129,20 +129,26 @@ function fecharGaleriaModal() {
 
 // Botão de som do vídeo principal (hero)
 function configurarMudoVideoHero() {
+    const elementoVideo = document.getElementById('hero-video');
     const botaoMudo = document.getElementById('hero-mute-toggle');
     
+    if (!elementoVideo) return;
+    
+    elementoVideo.muted = true;
+    elementoVideo.volume = 1;
+    
+    const atualizarRotuloMudo = () => {
+        if (!botaoMudo) return;
+        botaoMudo.textContent = elementoVideo.muted ? '🔇' : '🔊';
+        botaoMudo.setAttribute('aria-pressed', (!elementoVideo.muted).toString());
+    };
+    
     if (botaoMudo) {
-        // Mostra o botão de mudo e define o estado inicial como mudo
-        botaoMudo.style.display = 'block';
-        botaoMudo.textContent = '🔇'; // Começa mudo
-        botaoMudo.setAttribute('aria-pressed', 'true');
-        
         botaoMudo.addEventListener('click', () => {
-            // Para vídeos do YouTube, o botão muda o ícone visualmente
-            const isMuted = botaoMudo.textContent === '🔇';
-            botaoMudo.textContent = isMuted ? '🔊' : '🔇';
-            botaoMudo.setAttribute('aria-pressed', (!isMuted).toString());
+            elementoVideo.muted = !elementoVideo.muted;
+            atualizarRotuloMudo();
         });
+        atualizarRotuloMudo();
     }
 }
 
