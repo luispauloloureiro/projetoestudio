@@ -424,7 +424,7 @@ button:hover, .agendar-btn:hover, .agendar-link:hover {
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
-    margin-top: 1rem;
+    margin-top: 10px;
 }
 
 .hero-video {
