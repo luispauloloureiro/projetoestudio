@@ -129,26 +129,11 @@ function fecharGaleriaModal() {
 
 // Botão de som do vídeo principal (hero)
 function configurarMudoVideoHero() {
-    const elementoVideo = document.getElementById('hero-video');
     const botaoMudo = document.getElementById('hero-mute-toggle');
     
-    if (!elementoVideo) return;
-    
-    elementoVideo.muted = true;
-    elementoVideo.volume = 1;
-    
-    const atualizarRotuloMudo = () => {
-        if (!botaoMudo) return;
-        botaoMudo.textContent = elementoVideo.muted ? '🔇' : '🔊';
-        botaoMudo.setAttribute('aria-pressed', (!elementoVideo.muted).toString());
-    };
-    
+    // Como estamos usando iframe do Google Drive, o controle de mudo é feito automaticamente
     if (botaoMudo) {
-        botaoMudo.addEventListener('click', () => {
-            elementoVideo.muted = !elementoVideo.muted;
-            atualizarRotuloMudo();
-        });
-        atualizarRotuloMudo();
+        botaoMudo.style.display = 'none';
     }
 }
 
