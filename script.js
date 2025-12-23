@@ -130,7 +130,14 @@ function fecharGaleriaModal() {
 // Botão de som do vídeo principal (hero)
 function configurarMudoVideoHero() {
     const elementoVideo = document.getElementById('hero-video');
-    if (!elementoVideo) return;
+    if (!elementoVideo) {
+        // Se não houver vídeo, tenta configurar o botão com base na imagem placeholder
+        const botaoMudo = document.getElementById('hero-mute-toggle');
+        if (botaoMudo) {
+            botaoMudo.style.display = 'none'; // Esconde o botão se não houver vídeo
+        }
+        return;
+    }
     
     elementoVideo.muted = true;
     elementoVideo.volume = 1;
@@ -154,7 +161,14 @@ function configurarMudoVideoHero() {
 // Função para configurar a reprodução do vídeo
 function configurarReproducaoVideo() {
     const elementoVideo = document.getElementById('sobre-video');
-    if (!elementoVideo) return;
+    if (!elementoVideo) {
+        // Se não houver vídeo, tenta configurar o botão com base na imagem placeholder
+        const botaoMudo = document.getElementById('mute-toggle');
+        if (botaoMudo) {
+            botaoMudo.style.display = 'none'; // Esconde o botão se não houver vídeo
+        }
+        return;
+    }
     
     // Reprodução automática silenciosa apenas quando o vídeo está visível
     elementoVideo.muted = true;
