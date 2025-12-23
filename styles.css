@@ -431,7 +431,8 @@ button:hover, .agendar-btn:hover, .agendar-link:hover {
     height: 100%;
     border: none;
     outline: none;
-    aspect-ratio: 16/9;
+    object-fit: cover;
+    aspect-ratio: 9/16;
 }
 
 .hero-text-column {

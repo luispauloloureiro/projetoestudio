@@ -129,14 +129,12 @@ function fecharGaleriaModal() {
 
 // Botão de som do vídeo principal (hero)
 function configurarMudoVideoHero() {
-    const elementoVideo = document.getElementById('hero-video');
     const botaoMudo = document.getElementById('hero-mute-toggle');
     
-    if (!elementoVideo && botaoMudo) {
-        // Se não houver vídeo local (como com iframe do YouTube), esconde o botão de mudo
+    // Como o vídeo do YouTube agora tem som ativado, esconde o botão de mudo
+    if (botaoMudo) {
         botaoMudo.style.display = 'none';
     }
-    // Para vídeos do YouTube, o controle de mudo é feito automaticamente via parâmetros da URL
 }
 
 // Função para configurar a reprodução do vídeo
