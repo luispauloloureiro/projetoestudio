@@ -427,8 +427,8 @@ button:hover, .agendar-btn:hover, .agendar-link:hover {
 }
 
 .hero-youtube-video {
-    width: 85%;
-    height: 85%;
+    width: 80%;
+    height: 80%;
     border: none;
     outline: none;
     object-fit: cover;
