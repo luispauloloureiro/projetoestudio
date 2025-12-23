@@ -300,7 +300,7 @@ document.addEventListener('DOMContentLoaded', function () {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('animate', 'animate-show');
-                observer.unobserve(entry.target);
+                observador.unobserve(entry.target);
             }
         });
     }, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
@@ -312,7 +312,7 @@ document.addEventListener('DOMContentLoaded', function () {
         el.style.transform = 'translateY(24px)';
         el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         el.style.transitionDelay = `${(i % 6) * 0.05}s`;
-        observer.observe(el);
+        observador.observe(el);
     });
 
     // Função auxiliar debounce para evitar chamadas excessivas
