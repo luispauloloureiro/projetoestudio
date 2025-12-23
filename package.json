@@ -1,0 +1,13 @@
+{
+  "name": "estudio-monique-assets",
+  "version": "1.0.0",
+  "description": "Ferramentas para otimizar imagens do site Estúdio Monique Saelen",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "compress-images": "node scripts/compress-images.js",
+    "compress-images:magick": "powershell -ExecutionPolicy Bypass -File scripts\\compress-images-imagemagick.ps1"
+  },
+  "dependencies": {
+    "sharp": "^0.32.4"
+  }
+}

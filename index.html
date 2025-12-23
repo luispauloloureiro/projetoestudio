@@ -1,0 +1,404 @@
+<!-- Redir pro GitHub Pages (só pra garantir) -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estúdio Monique Saelen | Beleza Natural e Acolhimento</title>
+    <meta name="description" content="Estúdio Monique Saelen — cuidados estéticos personalizados: design de sobrancelhas, lash lifting, unhas, dermaplaning e mais. Agende seu horário." />
+    <link rel="icon" type="image/png" href="imagens/logo/log02.png">
+    <link rel="stylesheet" href="styles.css?v=27">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Allura&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mujito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    
+    <header id="home" class="hero">
+        <nav class="navbar" style="position: fixed !important; top: 0 !important; visibility: visible !important; opacity: 1 !important; display: flex !important; z-index: 9999 !important;">
+            <div class="logo">
+                <img loading="lazy" decoding="async" src="imagens/logo/log02.png" alt="Estúdio Monique Saelen">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#diferenciais">Diferenciais</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#resultados">Portfólio</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+            <a href="https://wa.me/5511993441860?text=Ol%C3%A1%2C+gostaria+de+agendar+um+hor%C3%A1rio" class="agendar-btn" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-whatsapp"></i> Agendar Horário
+            </a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        
+        <div class="container">
+            <div class="hero-content-grid">
+                <div class="hero-video-column">
+                    <video id="hero-video" autoplay loop muted playsinline preload="metadata">
+                        <source src="imagens/vid/vid1.mp4" type="video/mp4">
+                    </video>
+                    <button id="hero-mute-toggle" class="hero-mute-toggle" aria-pressed="false" aria-label="Alternar som">🔇</button>
+                </div>
+                <div class="hero-text-column">
+                    <div class="hero-text-wrapper">
+                        <h1>Beleza Natural & Acolhimento</h1>
+                        <p>Estúdio Monique Saelen</p>
+                        <p class="hero-text">Exclusividade, naturalidade e cuidado personalizado para realçar a sua essência.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="diferenciais" class="diferenciais">
+        <div class="container">
+            <h2>Por Que Escolher o Estúdio Monique Saelen?</h2>
+            <div class="diferenciais-grid">
+                <div class="diferencial-card">
+                    <h3>Acolhimento</h3>
+                    <p>Nosso estúdio nasceu do desejo de criar um ambiente onde cada mulher se sinta confortável, respeitada e vista. Aqui, você tem seu momento, sem filas, sem aglomeração.</p>
+                </div>
+                <div class="diferencial-card">
+                    <h3>Naturalidade</h3>
+                    <p>Acreditamos que beleza de verdade não precisa de exagero. Trabalhamos para realçar o que você já tem de mais bonito, sempre respeitando sua fisionomia e preferências.</p>
+                </div>
+                <div class="diferencial-card">
+                    <h3>Exclusividade</h3>
+                    <p>Atendemos apenas com horário marcado para garantir tranquilidade, foco total no seu atendimento e um espaço reservado só para você.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resultados" class="resultados">
+        <div class="container">
+            <h2>Portfólio de Resultados</h2>
+            <p>Veja alguns dos nossos trabalhos realizados no nosso espaço, sempre com foco em naturalidade, limpeza estética e harmonia facial. São resultados que refletem nossa essência: cuidado, técnica e respeito à identidade de cada cliente.</p>
+            
+            <div class="servicos-portfolio">
+
+                <!-- Sobrancelha top -->
+                <div class="portfolio-card" data-servico="design-sobrancelhas">
+                    <div class="portfolio-preview">
+                        <img loading="lazy" decoding="async" src="imagens/resultado/design-de-sobrancelhas/dsb01.jpg" alt="Design de Sobrancelhas">
+                        <div class="portfolio-overlay">
+                            <h3>Design de Sobrancelhas</h3>
+                            <span class="portfolio-hint">Ver mais</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cílios curvados (Lash Lifting) -->
+                <div class="portfolio-card" data-servico="lash-lifting">
+                    <div class="portfolio-preview">
+                        <img loading="lazy" decoding="async" src="imagens/resultado/lash-lifting/lsh01.jpg" alt="Lash Lifting">
+                        <div class="portfolio-overlay">
+                            <h3>Lash Lifting</h3>
+                            <span class="portfolio-hint">Ver mais</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Brow Lamination (fio alinhado) -->
+                <div class="portfolio-card" data-servico="brow-lamination">
+                    <div class="portfolio-preview">
+                        <img loading="lazy" decoding="async" src="imagens/resultado/brow/brw01.jpg" alt="Brow Lamination">
+                        <div class="portfolio-overlay">
+                            <h3>Brow Lamination</h3>
+                            <span class="portfolio-hint">Ver mais</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Unhas feitas -->
+                <div class="portfolio-card" data-servico="unhas">
+                    <div class="portfolio-preview">
+                        <img loading="lazy" decoding="async" src="imagens/resultado/unhas/unh01.jpg" alt="Unhas">
+                        <div class="portfolio-overlay">
+                            <h3>Unhas</h3>
+                            <span class="portfolio-hint">Ver mais</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Limpeza de pele show -->
+                <div class="portfolio-card" data-servico="limpeza-pele">
+                    <div class="portfolio-preview">
+                        <img loading="lazy" decoding="async" src="imagens/resultado/limpeza_pele/lmp01.jpg" alt="Limpeza de Pele">
+                        <div class="portfolio-overlay">
+                            <h3>Limpeza de Pele</h3>
+                            <span class="portfolio-hint">Ver mais</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cílios longos (extensão) -->
+                <div class="portfolio-card" data-servico="extensao-cilios">
+                    <div class="portfolio-preview">
+                        <img loading="lazy" decoding="async" src="imagens/resultado/extensao_cilios/ext01.jpg" alt="Extensão de Cílios">
+                        <div class="portfolio-overlay">
+                            <h3>Extensão de Cílios</h3>
+                            <span class="portfolio-hint">Ver mais</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal da galeria de fotos -->
+    <div id="galeria-modal" class="galeria-modal">
+        <div class="galeria-modal-content">
+            <button class="galeria-modal-close">&times;</button>
+            <h3 id="galeria-modal-titulo"></h3>
+            <div id="galeria-modal-grid" class="galeria-modal-grid"></div>
+        </div>
+    </div>
+
+    <section id="servicos" class="servicos">
+        <div class="container">
+            <h2>Nossos Atendimentos Personalizados</h2>
+            <p>Todos os nossos atendimentos seguem um padrão de cuidado minucioso, com diálogo, avaliação prévia e técnica personalizada. Você nunca recebe algo padrão — recebe o que é ideal para você.</p>
+            
+            <div class="servicos-grid">
+                <div class="servico-card">
+                    <h3>Unhas</h3>
+                    <p>Unhas bem feitas, com acabamento impecável e foco em durabilidade. Trabalhamos com esmaltação tradicional e cuidado total das mãos e pés.</p>
+                </div>
+                <div class="servico-card">
+                    <h3>Design de Sobrancelhas</h3>
+                    <p>Design natural, com e sem henna, sempre respeitando a anatomia facial e a preferência da cliente. Nada de sobrancelhas artificiais nosso foco é equilíbrio.</p>
+                </div>
+                <div class="servico-card">
+                    <h3>Brow Lamination</h3>
+                    <p>Alinhamento dos fios para um efeito moderno e organizado. Pode ser mais sutil ou mais marcado, dependendo do seu estilo.</p>
+                </div>
+                <div class="servico-card">
+                    <h3>Lash Lifting</h3>
+                    <p>Curvatura natural dos cílios, sem extensão e sem peso. Um dos procedimentos favoritos por elevar o olhar sem perder a naturalidade.</p>
+                </div>
+                <div class="servico-card">
+                    <h3>Limpeza de Pele</h3>
+                    <p>Protocolo completo para renovação, luminosidade e saúde da pele.</p>
+                </div>
+                <div class="servico-card">
+                    <h3>Dermaplaning</h3>
+                    <p>Procedimento que remove células mortas e promove brilho instantâneo, ideal para quem busca pele lisa e uniforme.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="masculino" class="masculino">
+        <div class="container">
+            <h2>Estética Masculina com Naturalidade e Discrição</h2>
+            <p>Criamos uma sessão exclusiva para o público masculino, com foco em resultados sutis, alinhamento natural e cuidado individualizado.</p>
+            
+            <div class="masculino-servicos">
+                <div class="masculino-item">
+                    <h3>Design de Sobrancelhas</h3>
+                    <p>Harmonização sutil, sem marcar demais. Mantemos a estrutura natural do rosto, apenas ajustando excessos e alinhando os fios.</p>
+                </div>
+                
+                <div class="masculino-item">
+                    <h3>Limpeza de Pele Masculina</h3>
+                    <p>Protocolo específico para pele masculina, focado em limpeza profunda, controle de oleosidade e uniformidade.</p>
+                </div>
+                
+                <div class="masculino-item">
+                    <h3>Dermaplaning para Homens</h3>
+                    <p>Ajuda a remover células mortas, suavizar textura e melhorar a aparência da pele, mantendo a naturalidade.</p>
+                </div>
+            </div>
+            
+            <p class="texto-apoio">Nosso objetivo é proporcionar um atendimento confortável, reservado e feito sob medida para homens que buscam cuidar da imagem sem exageros.</p>
+        </div>
+    </section>
+
+    <section id="depoimentos" class="depoimentos">
+        <div class="container">
+            <h2>Quem Passou por Aqui Recomenda</h2>
+            <p>Somos um estúdio com forte reputação local e dezenas de avaliações positivas. Nossa missão sempre foi ser um espaço seguro para mulheres que desejam cuidar da beleza com confiança.</p>
+            
+            <div class="depoimentos-grid">
+                <div class="depoimento-card">
+                    <img loading="lazy" decoding="async" src="imagens/depoimentos/dep01.png" alt="Depoimento de Cliente Satisfeita">
+                </div>
+                
+                <div class="depoimento-card">
+                    <img loading="lazy" decoding="async" src="imagens/depoimentos/dep02.png" alt="Depoimento de Cliente Satisfeita">
+                </div>
+                
+                <div class="depoimento-card">
+                    <img loading="lazy" decoding="async" src="imagens/depoimentos/dep03.png" alt="Depoimento de Cliente Satisfeita">
+                </div>
+                
+                <div class="depoimento-card">
+                    <img loading="lazy" decoding="async" src="imagens/depoimentos/dep04.png" alt="Depoimento de Cliente Satisfeita">
+                </div>
+                
+                <div class="depoimento-card">
+                    <img loading="lazy" decoding="async" src="imagens/depoimentos/dep05.png" alt="Depoimento de Cliente Satisfeita">
+                </div>
+                
+                <div class="depoimento-card">
+                    <img loading="lazy" decoding="async" src="imagens/depoimentos/dep06.png" alt="Depoimento de Cliente Satisfeita">
+                </div>
+                
+                <div class="depoimento-card">
+                    <img loading="lazy" decoding="async" src="imagens/depoimentos/dep07.png" alt="Depoimento de Cliente Satisfeita">
+                </div>
+                
+                <div class="depoimento-card">
+                    <img loading="lazy" decoding="async" src="imagens/depoimentos/dep08.png" alt="Depoimento de Cliente Satisfeita">
+                </div>
+                
+                <div class="depoimento-card">
+                    <img loading="lazy" decoding="async" src="imagens/depoimentos/dep09.png" alt="Depoimento de Cliente Satisfeita">
+                </div>
+                
+                <div class="depoimento-card">
+                    <img loading="lazy" decoding="async" src="imagens/depoimentos/dep10.png" alt="Depoimento de Cliente Satisfeita">
+                </div>
+                
+                <div class="depoimento-card">
+                    <img loading="lazy" decoding="async" src="imagens/depoimentos/dep11.png" alt="Depoimento de Cliente Satisfeita">
+                </div>
+                
+                <div class="depoimento-card">
+                    <img loading="lazy" decoding="async" src="imagens/depoimentos/dep12.png" alt="Depoimento de Cliente Satisfeita">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2>Dicas e Cuidados: Nosso Conhecimento a Seu Favor</h2>
+            <div class="blog-posts">
+                <div class="blog-post">
+                    <h3>Cuidados antes e depois dos procedimentos: orientações personalizadas</h3>
+                    <p>Dicas essenciais para maximizar os resultados dos nossos serviços.</p>
+                </div>
+                
+                <div class="blog-post">
+                    <h3>Como escolher o design ideal: análise de proporção e simetria para valorizar seus traços</h3>
+                    <p>Entenda como criamos designs únicos que valorizam sua beleza natural.</p>
+                </div>
+                
+                <div class="blog-post">
+                    <h3>Mitos e verdades sobre Lash Lifting e Brow Lamination</h3>
+                    <p>Desmistificamos os principais mitos sobre nossos procedimentos favoritos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <div class="sobre-content">
+                <div class="sobre-video-wrapper">
+                    <video id="sobre-video" playsinline loop muted preload="metadata" class="presentation-video">
+                        <source src="imagens/vid/vid2.mp4" type="video/mp4">
+                        Seu navegador não suporta vídeos.
+                    </video>
+                    <button id="mute-toggle" class="mute-toggle" aria-pressed="true" aria-label="Alternar som">🔇</button>
+                </div>
+                <div class="sobre-texto">
+                    <h2>Somos Monique e Karina<br>Apaixonadas por Transformar Autoestima</h2>
+                    <p>O Estúdio Monique Saelen nasceu do sonho da Monique<br>de criar um espaço que unisse técnica, cuidado e naturalidade.</p>
+                    <p>Nosso propósito é simples: oferecer um atendimento humano,<br>sem pressa, onde cada cliente se sinta acolhida e valorizada.</p>
+                    
+                    <div class="listas-sobre">
+                        <div>
+                            <h3>Nossos Valores</h3>
+                            <ul class="valores-list">
+                                <li>Ética</li>
+                                <li>Gratidão</li>
+                                <li>Lealdade</li>
+                                <li>Compromisso</li>
+                                <li>Respeito</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Nosso Diferencial</h3>
+                            <ul class="diferencial-list">
+                                <li>Atendimento totalmente humanizado</li>
+                                <li>Exclusividade por horário marcado</li>
+                                <li>Ambiente calmo e reservado</li>
+                                <li>Resultados naturais e elegantes</li>
+                                <li>Localização estratégica</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2>Agende Seu Momento Exclusivo</h2>
+            <p>Atendemos apenas com horário marcado para garantir exclusividade e a melhor experiência possível.</p>
+            
+            <div class="contato-info">
+                <div class="info-item">
+                    <h3>Localização</h3>
+                    <p>Rua Barão de Goiânia, 74 – Sala 2<br>Jardim Aeroporto – SP – 04612-020</p>
+                    <p><strong>Pertinho de:</strong><br>Moema, Campo Belo e Diadema</p>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.927684057553!2d-46.6966336850207!3d-23.63794498463849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50a717af8085%3A0x960a0b0f9a0b0b0b!2sRua%20Bar%C3%A3o%20de%20Goi%C3%A2nia%2C%2074%20-%20Jardim%20Aeroporto%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004612-020!5e0!3m2!1sen!2sbr!4v1650000000000!5m2!1sen!2sbr" width="100%" height="200" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <h3>Redes Sociais</h3>
+                    <div class="redes-sociais">
+                        <a href="https://www.instagram.com/estudio_moniquesaelen?igsh=NTlndXkxeHhhNGlm" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a>
+                        <a href="mailto:moniquesaelen.estetica@gmail.com" rel="noopener noreferrer"><i class="fas fa-envelope"></i> moniquesaelen.estetica@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="#" id="politica-link" class="footer-link">Política de Agendamento e Cancelamento</a>
+                <a href="LINK_POLITICA_PRIVACIDADE" class="footer-link">Política de Privacidade</a>
+            </div>
+            <p>© 2025 Estúdio Monique Saelen. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js?v=9"></script>
+    <!-- Modal: Política de agendamento (texto tirado da img, sem info de Pix) -->
+    <div id="politica-modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="politica-title">
+        <div class="modal-overlay"></div>
+            <div class="modal-content" role="document">
+            <button class="modal-close" aria-label="Fechar">&times;</button>
+            <div class="modal-header">
+                <div class="modal-logo-box">
+                    <img src="imagens/logo/log02.png" alt="Logo Estúdio Monique Saelen">
+                </div>
+                <h3 class="modal-subtitle">Política de Agendamentos</h3>
+            </div>
+            <div class="modal-body">
+                <p>Para confirmação de agendamento será necessário o pagamento de <strong>30% do valor total</strong> dos procedimentos.</p>
+                <p>O valor será abatido do valor do procedimento.</p>
+                <p>Para cancelamento ou reagendamento é necessário ser informado com pelo menos <strong>24h de antecedência</strong>.</p>
+                <p>A não comunicação dentro de 24h de antecedência será considerada como desistência, sendo assim sem o reembolso do valor antecipado.</p>
+                <p><strong>É necessário o envio do comprovante para confirmação de agendamento.</strong></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
