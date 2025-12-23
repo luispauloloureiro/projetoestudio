@@ -427,12 +427,13 @@ button:hover, .agendar-btn:hover, .agendar-link:hover {
 }
 
 .hero-youtube-video {
-    width: 100%;
-    height: 100%;
+    width: 85%;
+    height: 85%;
     border: none;
     outline: none;
     object-fit: cover;
     aspect-ratio: 9/16;
+    border-radius: 8px;
 }
 
 .hero-text-column {
