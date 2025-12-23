@@ -131,9 +131,18 @@ function fecharGaleriaModal() {
 function configurarMudoVideoHero() {
     const botaoMudo = document.getElementById('hero-mute-toggle');
     
-    // Como o vídeo do YouTube agora tem som ativado, esconde o botão de mudo
     if (botaoMudo) {
-        botaoMudo.style.display = 'none';
+        // Mostra o botão de mudo e define o estado inicial como mudo
+        botaoMudo.style.display = 'block';
+        botaoMudo.textContent = '🔇'; // Começa mudo
+        botaoMudo.setAttribute('aria-pressed', 'true');
+        
+        botaoMudo.addEventListener('click', () => {
+            // Para vídeos do YouTube, o botão muda o ícone visualmente
+            const isMuted = botaoMudo.textContent === '🔇';
+            botaoMudo.textContent = isMuted ? '🔊' : '🔇';
+            botaoMudo.setAttribute('aria-pressed', (!isMuted).toString());
+        });
     }
 }
 
